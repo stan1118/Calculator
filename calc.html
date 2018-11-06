@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calc</title>
+</head>
+<body>
+    
+<form id="calculator">
+    <h1>Calculator</h1>
+  
+    <div id="input-field">
+      <input type="text" name="display" id="display" text-align="center">
+    </div>
+  
+    <table>
+      <tr class="btn" >
+        <td>  <input type="button" value="1" id="1" onclick="calculator.display.value += 1"></td>
+        <td>  <input type="button" value="2" id="2" onclick="calculator.display.value += 2"> </td>
+        <td>  <input type="button" value="3" id="3" onclick="calculator.display.value += 3"> </td>
+          
+        <td>  <input type="button" value="+" id="btn-plus" onclick="calculator.display.value += '+'"> </td>
+          
+      </tr>
+      <tr class="btn" >
+        <td> <input type="button" value="4" id="4" onclick="calculator.display.value += 4"> </td>
+        <td> <input type="button" value="5" id="5" onclick="calculator.display.value += 5"></td>
+        <td> <input type="button" value="6" id="6" onclick="calculator.display.value += 6"> </td>
+          
+               <td>  <input type="button" value="-" id="btn-subtract" onclick="calculator.display.value +='-'"> </td>
+          
+      </tr>
+      <tr class="btn" >
+        <td> <input type="button" value="7" id="7" onclick="calculator.display.value += 7"> </td>
+        <td> <input type="button" value="8" id="8" onclick="calculator.display.value += 8"> </td>
+        <td> <input type="button" value="9" id="9" onclick="calculator.display.value += 9"> </td>
+        
+         <td>  <input type="button" value="*" id="btn-multiply" onclick="calculator.display.value +='*''"> </td>
+           
+      </tr>
+      <tr class="btn" >
+        <td> <input type="button" value="c" id="clear" onclick=""></td>
+        <td> <input type="button" value="0" id="0" onclick="calculator.display.value += 0"></td>
+        <td> <input type="button" value="9" id="=" onclick=""> </td>
+          
+          <td>  <input type="button" value="/" id="btn-divide" onclick="calculator.display.value += '/'"> </td>
+            
+            <td> <input type="button" name=”doit” value="=" onclick="calculator.display.value = eval(calculator.display.value)"> </td>
+           
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
